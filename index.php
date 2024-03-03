@@ -4,20 +4,22 @@ include "koneksi.php";
 $userid = isset($_SESSION['userid']) ? $_SESSION['userid'] : null;
 ?>
 
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>web gallery foto</title>
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
     <link rel="stylesheet" type="text/css" href="assets/style.css">
+
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg bg-body-primary">
+   <nav class="navbar navbar-expand-lg bg-body-primary">
     <div class="container d-flex justify-content-between">
         <a class="navbar-brand" href="index.php">Website Gallery Foto</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -50,10 +52,9 @@ $userid = isset($_SESSION['userid']) ? $_SESSION['userid'] : null;
             </ul>
         </div>
     </div>
-  </nav>
+   </nav>
 
-   
-    <div class="container mt-3">
+   <div class="container mt-3">
         <form action="index.php" method="GET" class="mb-3">
             <div class="input-group">
                 <input type="text" class="form-control" placeholder="Cari foto..." name="keyword">
@@ -110,6 +111,8 @@ $userid = isset($_SESSION['userid']) ? $_SESSION['userid'] : null;
     <footer class="d-flex justify-content-center border-top mt-3 bg-light fixed-bottom">
         <p>UKK 2024</p>
     </footer>
+
+    <script src="assets/js/bootstrap.min.js"></script>
 </body>
 
 </html>
